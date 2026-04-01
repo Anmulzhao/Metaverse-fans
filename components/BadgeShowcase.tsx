@@ -1,0 +1,1 @@
+// BadgeShowcase component implementation

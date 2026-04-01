@@ -1,0 +1,1 @@
+// Chat page component implementation

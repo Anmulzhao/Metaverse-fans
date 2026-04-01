@@ -1,0 +1,1 @@
+// NewsFeed page component implementation
