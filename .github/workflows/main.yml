@@ -1,0 +1,23 @@
+name: Deploy & Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+jobs:
+  build-deploy-release:
+    runs-on: ubuntu-latest
+    steps:
+      # ... 你的构建和部署步骤
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "Metaverse Fans ${{ github.ref_name }}"
+          body: |
+            🎉 Metaverse Fans ${{ github.ref_name }} 发布！
+            - 功能详见README与发布说明
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
