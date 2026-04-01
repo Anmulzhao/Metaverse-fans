@@ -1,0 +1,1 @@
+{\n  "name": "metaverse-fans",\n  "version": "1.0.0",\n  "description": "A project for Metaverse fans exploring immersive technologies.",\n  "main": "index.js",\n  "scripts": {\n    "start": "node index.js",\n    "test": "jest"\n  },\n  "dependencies": {},\n  "devDependencies": {\n    "typescript": "^4.0.0",\n    "jest": "^26.0.0"\n  }\n}
